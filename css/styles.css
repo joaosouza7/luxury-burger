@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -15,6 +16,7 @@
 
 html, body {
     font: 1.1rem Poppins, sans-serif;
+    background-color: var(--white-500);
     color: var(--black-300);
     height: 100vh;
 }
@@ -27,6 +29,72 @@ button {
 
 a {
     text-decoration:  none;
+    color: var(--black-300);
 }
 
 /*** HEADER ***/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7rem;
+}
+
+.logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.logo > span {
+    color: var(--red-600);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 10px 20px;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background: linear-gradient(112.9deg, #EE323B 48.18%, #FDC55E 94.06%);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar a:hover {
+    color: #EE323B;
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
