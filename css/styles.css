@@ -14,6 +14,21 @@
     --black-300: #2E2E2E;
 }
 
+::-webkit-scrollbar {
+    width: 9px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--black-300);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #b3b2b1;
+    border-radius: .2rem;
+}
+
+/*****/
+
 html, body {
     font: 1.1rem Poppins, sans-serif;
     background-color: var(--white-500);
@@ -25,6 +40,10 @@ button {
     cursor: pointer;
     outline: 0;
     border: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -62,7 +81,6 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
 .navbar li {
@@ -341,7 +359,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -381,4 +399,101 @@ header {
     margin-top: .5rem;
     font-size: 1rem;
     line-height: 1.7;
+}
+
+/*** CALL TO ACTION ***/
+.cta {
+    background-color: #feeee7;
+    padding: 50px 0;
+    text-align: center;
+    width: 66%;
+    margin: 10rem auto;
+    border-radius: .3rem;
+    -webkit-box-shadow: 3px 2px 5px -1px rgba(179,178,177,1);
+    -moz-box-shadow: 3px 2px 5px -1px rgba(179,178,177,1);
+    box-shadow: 3px 2px 5px -1px rgba(179,178,177,1); 
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.cta a {
+    padding: 10px 25px;
+    background-color: var(--red-600);
+    color: var(--white-500);
+    border-radius: .3rem;
+}
+
+/*** FOOTER ***/
+.footer-content {
+    padding: 30px 0;
+    -webkit-box-shadow: 0px -2px 5px -1px rgba(179,178,177,1);
+    -moz-box-shadow: 0px -2px 5px -1px rgba(179,178,177,1);
+    box-shadow: 0px -2px 5px -1px rgba(179,178,177,1);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    left: 0;
+    bottom: -4px;
+    background-color: var(--red-600);
+}
+
+.col ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.col ul li a {
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.col ul li a:hover {
+    color: var(--red-600);
+    transform: translateX(-12px);
+}
+
+.col .socials {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--red-600);
+    color: var(--white-500);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.socials a:hover{
+    transform: scale(1.2);
+    color: var(--red-600);
+    background-color: var(--white-500);
 }
