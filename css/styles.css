@@ -44,6 +44,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 7rem;
+    background-color: var(--white-500);
 }
 
 .logo{
@@ -129,7 +130,7 @@ header {
 }
 
 .home-text p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: justify;
     margin: 1.1rem 0 2rem 0;
@@ -152,7 +153,54 @@ header {
 }
 
 .home-img img {
-    width: 600px;
+    max-width: 600px;
     height: auto;
     object-fit: cover;
+}
+
+/*** ABOUT ***/
+.about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(250, 241, 228);
+}
+
+.about-img img {
+    margin: 5rem 0;
+    max-width: 580px;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text span {
+    color: var(--red-600);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: .6rem;
+}
+
+.about-text p {
+    margin: 1rem 0;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.about-text > a {
+    display: inline-block;
+    width: 40%;
+    background-color: var(--red-600);
+    color: var(--white-500);
+    border-radius: .2rem;
+    padding: 10px 20px;
+    text-align: center;
+
 }
