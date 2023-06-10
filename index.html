@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--BOX ICONS-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css"  />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"  />
     <title>Luxury Burger</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
 <body>
     <header>
-        <a class="logo" href="#"><span>Luxury</span>Burger</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <a class="logo" href="#" data-aos="zoom-in"><span>Luxury</span>Burger</a>
+        <div class="bx bx-menu" id="menu-icon" data-aos="fade-left"></div>
 
-        <ul class="navbar">
+        <ul class="navbar" data-aos="fade-left">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -26,7 +28,7 @@
 
     <!-- HOME -->
     <section class="home" id="home">
-        <div class="home-text">
+        <div class="home-text" data-aos="fade-right">
             <h3>Order your</h3>
             <h4>favorite Foods</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nisi vel nobis veniam, ea qui doloribus dolorum, provident quos quis sed esse illo incidunt.</p>
@@ -34,17 +36,17 @@
             <a href="#" class="btn-action">Today's Menu</a>
         </div>
 
-        <div class="home-img">        
+        <div class="home-img" data-aos="fade-up">        
             <img src="images/home-img.png" alt="Hamburguer" />
         </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-right">
             <img src="images/about-img.png" alt="Hamburguer com Fritas e Cerveja" />
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left">
             <span>About us</span>
             <h2>We speak the good <br />food language</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus cumque, adipisci aut explicabo commodi nulla consequatur.</p>
@@ -53,14 +55,14 @@
     </section>
 
     <!-- MENU -->
-    <section class="menu" id="menu">
-        <div class="heading">
+    <section class="menu" id="menu" data-aos="fade-up">
+        <div class="heading" data-aos="zoom-in">
             <span>Food Menu</span>
             <h2>Fresh taste and great price</h2>
         </div>
 
         <div class="menu-container">
-            <div class="card">
+            <div class="card" >
                 <div class="card-img">
                     <img src="images/menu-img01.png" alt="X-tudo" />
                 </div>
@@ -131,26 +133,26 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services" id="services">
-        <div class="heading">
+    <section class="services" id="services" data-aos="fade-up">
+        <div class="heading" data-aos="zoom-in">
             <span>Services</span>
             <h2>We provide best quality foods</h2>
         </div>
 
         <div class="services-container">
-            <div class="s-box">
+            <div class="s-box" data-aos="flip-right">
                 <i class='bx bxs-package bx-tada' ></i>
                 <h3>Order</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero harum debitis voluptatum, quo veritatis, voluptatibus corrupti pariatur.</p>
             </div>
 
-            <div class="s-box">
+            <div class="s-box" data-aos="flip-right">
                 <i class='bx bxs-truck bx-tada' ></i>
                 <h3>Shipping</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero harum debitis voluptatum, quo veritatis, voluptatibus corrupti pariatur.</p>
             </div>
 
-            <div class="s-box">
+            <div class="s-box" data-aos="flip-right">
                 <i class='bx bxs-food-menu bx-tada' ></i>
                 <h3>Delivered</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero harum debitis voluptatum, quo veritatis, voluptatibus corrupti pariatur.</p>
@@ -159,13 +161,13 @@
     </section>
 
     <!-- CALL TO ACTION -->
-    <section class="cta">
+    <section class="cta" data-aos="zoom-in-up">
         <h2>We make quality food <br/> Everyday</h2>
         <a href="#" class="btn-action">Let's talk</a>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact">
+    <footer id="contact" data-aos="fade-down">
         <div class="footer-content">
             <div class="main">
                 <div class="col">
@@ -202,5 +204,9 @@
             </div>
         </div>
     </footer>
+    
+    <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
