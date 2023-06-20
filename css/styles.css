@@ -30,7 +30,7 @@
 /*****/
 
 html, body {
-    font: 1.1rem Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--white-500);
     color: var(--black-300);
     height: 100vh;
@@ -127,7 +127,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 9rem 2% 7rem;
+    padding: 9rem 2% 8rem;
 }
 
 .home-text {
@@ -179,6 +179,7 @@ header {
 
 /*** ABOUT ***/
 .about {
+    overflow: hidden;
     width: 100%;
     display: flex;
     align-items: center;
